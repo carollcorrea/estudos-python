@@ -1,0 +1,8 @@
+*)Len
+
+Tamanho da lista --> quantidade de elementos na lista.
+
+*)Sorted
+
+Uma alternativa ao sort. Sorted é uma função, tenho que passar argumentos.
+É iterável e também tem a função reverse.

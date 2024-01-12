@@ -1,0 +1,52 @@
+>>>>Criação 
+
+É um conjunto não ordenado de pares, chave:valor, onde as chaves são únicas em uma dada instância do dicionário.
+Dicionários são delimitados por chaves: {}, e contém uma lista de pares chave:valor separada por vírgulas.
+
+Para ser uma chave vália para o dicionário, tem que ser um valor imutável.
+O valor pode ser mutável ou imutável.
+
+{} ou dict
+
+pessoa = {"nome": "Guilerme", "idade":"28"}
+
+pessoa = dict(nome="Guilerme", idade="28")
+              
+#Quando já tenho um dicionário criado e quero adicionar uma info:
+pessoa["telefone"] = "3333-1234"
+
+
+>>>>Acesso a dados
+
+É como se estivesse atribuindo o valor, porém sem a atribuição.
+
+dados = {"nome":"Guilherme", "idade":"28", "telefone":"3333-1234"}
+
+dados["nome"] #Guilherme
+dados["idade"] #28
+dados["telefone"] #3333-1234
+
+#Agora vou sobrescrever os valores do dicionário, atribuindo novos valores a cada chave.
+
+dados["nome"] = "Maria"
+dados["idade"] ="28"
+dados["telefone"] ="9988-1781"
+
+print(dados)
+
+>>>>>>Dicionários Aninhados
+
+Podem armazenar qualquer tipo de objeto python como valor, desde que a chave para esse valor seja um objeto imutável (como string e números)
+
+Posso ter quantos dicionários aninhados eu quiser
+
+>>>>>Iteração
+
+for chave in contatos:
+    print(chave, contatos[chave])
+
+for chave, valor in contatos.itens():
+    print(chave, valor)
+
+>>>> Métodos da classe dict
+

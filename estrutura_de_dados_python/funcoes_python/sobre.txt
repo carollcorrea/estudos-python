@@ -1,0 +1,78 @@
+1) O que é Função ?
+
+é  um bloco de código identificado por um nome e pode receber 
+uma lista de parâmetros. Esses parâmetros podem ou não ter 
+valores padrões. Usar funções torna o código mais legível e 
+possibilita o reaproveitamento de código. Programar baseado 
+em funções é o mesmo que dizer que estamos programando de maneira
+*estruturada*[paradigma].
+
+Identificador (nome)
+Parâmetros (entradas)
+Retornos (saída)
+
+Palavra reservada para função: def
+
+A função é declarada e depois chamada para executar o bloco de código. E caso ela tenha argumentos, preciso passar na hora que estiver chamando.
+
+
+2) Retornando valores
+
+Para retornat um valor, usamos a palavra reservada return.
+Toda função python retorna None por padrão.
+Diferente se outras linguagens de programação, em python uma função pode retornar mais de um valor.
+
+3) Argumentos Nomeados
+
+Funções também podem ser chamadas usando argumentos nomeados da forma de chave=valor
+
+Aquele argumento que você vai passar para a função quando chama ela e não dentro da definição.
+
+4) Args e Kwargs
+
+Podemos combinar parâmetros obrigatórios com args e kwargs. Qundo esses são definidos (*args e **kwargs), o método recebe os valores com tupla e difionário respectivamente.
+
+*args: retorno em tupla
+**kwargs: retorno em dicionário
+
+5)Parâmetros Especiais
+
+Por padrão, arguementos podem ser passados para a função Python tanto por posição quanto explicitamente pelo nome. 
+Para uma melhor legibilidade e desempenho, faz sentido restringir a maneira pelo qual argumentos possam ser passados,
+assim, um desenvolvedor precisa apenas olhar para a definição da função para determinar se os itens são passados:
+
+-por posição
+-por posição e nomeados
+-por nome
+
+Sobre parâmetros:
+Parãmetros com nome(chave=valor) falamos que são parâmetros nomeados. FORÇA COM O *
+Parametros sequenciais (só com posição) são parâmetros sequenciais. FORÇA COM A /
+
+Para argumentos que serão deixados em "opcionais" deixar entre o / e a * na função.
+
+6) Objetos de primeira classe
+
+Em python, tudo é objeto, dessa forma funções também são objetos -> o que as torna objetos de primeira classe.
+Com isso podemos atribuir funções a variáveis, passá-las como parâmetro para funções, usá-las como valores em 
+estruturas de dados (listas, tuplas, dicionários, etc) e usar como valor de retorno para uma função (closures).
+
+Um objeto de primeira classe pode ser passado por parâmetro, por argumento para uma função. Ele pode ser retornado por 
+uma função e também pode ser atribuido a uma variável.
+Ex: string.
+
+7) Escopo local e escopo global
+
+Python trabalha com escopo local e global.
+
+Dentro do bloco da função o escolo é local. Portanto, alterações feitas ali em objetos imutáveis serão perdidas quando o método 
+terminar de ser executado.
+
+Para usar objetos globais utilizamos a palavras-chave global, que informa ai interpretador que a variável que está sendo 
+manipulada no escopo local é global.
+Essa NÃO é uma boa prática e deve ser evitada. Isso torna o debug e a manutenção do código muito difícil. 
+É legal evitar ao máximo.
+
+Quando estou usando o argumento por referencia que é um obj mutavel para a função, preciso criar uma cópia dele para que ele não altere a referencia externa. Porém como já e´um objeto mutavel ele vai propagar mesmo depois da função ter sido encerrada.
+Uma alternativa para esse tipo de necessidade é incluir na função uma cópia auxiliar do objeto, da variável
+

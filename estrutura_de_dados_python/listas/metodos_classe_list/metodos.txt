@@ -1,0 +1,49 @@
+[].append
+
+Adiciona elemento na lista
+
+[].clear
+
+Limpar lista
+
+[].copy
+
+Quando outra parte do código precisa usar a lista, fazemos a cópia para preservar a lista original
+caso haja modificação posterior e alguém precise dos dados pré alterção.
+
+[].count
+
+Usado para contar quantas vezes determinado objeto aparece dentro da sua lista.
+
+[].extend
+
+Adiciona uma lista à outra sem que valores duplicados sem eliminados.
+
+[].index
+
+Para achar a primeira ocorrência de um onjeto na lista (primeira vez que aparece).
+
+*resulta apenas a 1º ocorrencia. para descobrir os demais é possível combinar com o caount, até ele ficar zerado - decrementando
+ou tirando valores da lista e jogando novos counts.
+
+[].pop
+
+Comportamento pilha de pratos. Tira o ultimo elemento adicionado à lista.
+
+[].remove
+
+Para tirar elementos de uma lista.
+Remove a primeira ocorrência do elemento. Para remover os demais será preciso ver quantos elementos iguais tem com o count
+e seguir eliminando os elementos.
+
+[].reverse
+
+Para transpor lista espelhada (ao contrário).
+
+[].sort
+
+Ordenar a lista. De ordem de entrada de elementos (leitura de arquivos, entrada de usuário, leitura de banco de dados).
+Argumento alfabético por padrão. Aceita argumento booleano, 
+
+
+

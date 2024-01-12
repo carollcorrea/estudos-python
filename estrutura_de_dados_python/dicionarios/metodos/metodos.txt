@@ -1,0 +1,25 @@
+{}.clear: apaga todos os valores do meu dicionário. Útil para limpar o dicionário.
+
+{}.copy: Tira uma cópia do dicionário.Útil para quando você tem um dicionário, quer manipular ele mas não quer alterar os dados do dicionário original.
+
+{}.fromkeys: cria chaves para você. Quando vc quer criar as chaves do seu dicionário sem vincular nenhum valor; ou quando quer criar um conjunto de chaves e atribuir a elas um valor padrão.
+
+{}.get:É uma segunda forma de acessar valores dentro de um dicionário.
+
+{}.itens: retorna uma lista de tuplas. Muito útil para quando vai fazer o comando for e vc quer iterar sobre os valores do dicionário.
+
+{}.keys: retorna só as chaves do dicionário. É útil para saber todas as chaves que o seu dicionário tem.
+
+{}.pop: remover uma chave do seu dicionário.Muito bom para quando você quer remover um valor mas não tem certeza se ele está ou não no seu dicionário.Ou não quer ter que se importar com isso e quer evitar o KeyError
+
+{}opoitem: não informamos a chave, e ele vai removendo os itens na sequencia.
+
+{}.setdefault: Se o atributo não estiver no dicionário, ele adiciona com o valor atribuido.Se o atributo existir no dicionário, ele retorna o valor que existe no dicionário e não altera ele. #não funcionou no meu cod.
+
+{}.update: deixa a gente atualizar o dicionário com um novo dicionario.Se eu fizer um update com uma chave que não existe ele vai atualizar o dicionário adicionando a nova chave.
+
+{}.values: ao contrário do keys, esse método retorna os valores que estão atrelados às chaves. É bem útil quando vc não precisa saber a chave, simplesmente quer iterar sob todos os valores que aquele dicionario tem nas chaves.
+
+in: uma forma elegante de saber de uma chave exite dentro do dicionário.
+
+del: tirar o valor do dicionráio.Vou passar o objeto que eu quero remmover.
